@@ -33,7 +33,10 @@ local options = {
   scrolloff = 8, -- scroll offset in lines
   sidescrolloff = 8,
   guifont = "monospace:h17", -- the font used in graphical neovim applications
-  textwidth = 0
+  textwidth = 0,
+  keymap = "russian-jcukenwin", -- Russian config
+  iminsert = 0,
+  imsearch = 0
 }
 
 vim.opt.shortmess:append "c"
@@ -45,6 +48,7 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]] -- Treat '-' as a word part
 vim.cmd [[set formatoptions-=cro]]
+vim.cmd [[set spell spelllang=ru_yo,en_us]]
 
 -- Format on save
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
