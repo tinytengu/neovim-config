@@ -7,7 +7,7 @@
 --   command = "c"
 
 local leader = { "<Space>", " " }
-USE_ARROWS = true -- Use Up, Down, Left, Right arrow buttons instead of hjkl layout
+USE_ARROWS = false -- Use Up, Down, Left, Right arrow buttons instead of hjkl layout
 
 
 local opts = { noremap = true, silent = true } -- Default keymap options
@@ -34,18 +34,11 @@ K_UP_W = USE_ARROWS and "<Up>" or "k"
 K_DOWN = USE_ARROWS and "Down" or "j"
 K_DOWN_W = USE_ARROWS and "<Down>" or "j"
 
-
-
-function _G.test_f()
-  print(USE_ARROWS and "Arrows" or "HJKL")
-end
-
-keymap("n", "<leader>k", ":lua test_f()<CR>", opts)
-
+keymap("", "<leader>w", ":WhichKey<CR>", opts) -- Whichkey plugin
 
 ---- [Normal Mode] ----
 -- [Misc] --
-keymap("n", "<leader>e", ":Lex 30<cr>", opts) -- File explorer
+keymap("n", "<leader>e", ":Lex 30<CR>", opts) -- File explorer
 keymap("n", "<leader>nh", ":noh<CR>", opts)
 
 -- [Windows] --

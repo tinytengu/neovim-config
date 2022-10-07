@@ -8,6 +8,7 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "kyazdani42/nvim-web-devicons" -- Icons
   use "windwp/nvim-autopairs" -- Auto () [] {} "" and so on
   use "lunarvim/colorschemes" -- Colorschemes pack
   use {
@@ -15,6 +16,9 @@ return packer.startup(function(use)
     run = "cd app && npm install",
     setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" },
   } -- Markdown preview
+  use "nvim-lualine/lualine.nvim" -- Bototm statusline
+  use "goolord/alpha-nvim" -- Greeter
+  use "nvim-telescope/telescope.nvim" -- Telescope
 
   -- Commenting
   use {
@@ -24,6 +28,8 @@ return packer.startup(function(use)
     end
   } -- Smart comments
   use "JoosepAlviste/nvim-ts-context-commentstring" -- TS React contextual comments // and {/* */}
+  use "akinsho/bufferline.nvim" -- Bufferline
+  use "folke/which-key.nvim" -- Whichkey (keybindings popup)
 
   -- CMP plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

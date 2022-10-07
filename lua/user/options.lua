@@ -35,20 +35,20 @@ local options = {
   guifont = "monospace:h17", -- the font used in graphical neovim applications
   textwidth = 0,
   keymap = "russian-jcukenwin", -- Russian config
+  spelllang = "ru_yo,en_us",
   iminsert = 0,
-  imsearch = 0
+  imsearch = 0,
+  colorcolumn = "80"
 }
-
-vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
-vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd [[set whichwrap+=<,>,[,],h,l]]
 vim.cmd [[set iskeyword+=-]] -- Treat '-' as a word part
 vim.cmd [[set formatoptions-=cro]]
-vim.cmd [[set spell spelllang=ru_yo,en_us]]
+vim.cmd [[set shortmess+=c]]
 
 -- Format on save
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
