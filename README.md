@@ -27,6 +27,7 @@ It has most of the things one may need. This is a full list of packaged plugins:
   * [Comment.nvim](https://github.com/numToStr/Comment.nvim)
   * [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
 * File explorer
+  * [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
   * [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 * Gorgeous colorschemes
   * [colorschemes](https://github.com/lunarvim/colorschemes)

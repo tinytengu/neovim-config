@@ -38,7 +38,9 @@ keymap("", "<leader>w", ":WhichKey<CR>", opts) -- Whichkey plugin
 
 ---- [Normal Mode] ----
 -- [Misc] --
-keymap("n", "<leader>e", ":Lex 30<CR>", opts) -- File explorer
+keymap("n", "<leader>e", ":NvimTreeFocus<CR>", opts) -- Focus file explorer
+keymap("n", "<leader>ce", ":NvimTreeClose<CR>", opts) -- Close file explorer
+
 keymap("n", "<leader>nh", ":noh<CR>", opts)
 
 -- [Windows] --
@@ -59,6 +61,11 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-" .. K_RIGHT .. ">", ":bnext<CR>", opts)
 keymap("n", "<S-" .. K_LEFT .. ">", ":bprevious<CR>", opts)
+
+-- BufferLine
+keymap("n", "<C-b>", ":BufferLinePick<CR>", opts)
+keymap("n", "<C-S-" .. K_LEFT .. ">", ":BufferLineMovePrev<CR>", opts)
+keymap("n", "<C-S-" .. K_RIGHT .. ">", ":BufferLineMoveNext<CR>", opts)
 
 
 ---- [Insert Mode] ----

@@ -13,6 +13,25 @@ local opts = {
 }
 
 local mappings = {
+  b = {
+    name = "Buffer Line",
+    p = {
+      ":BufferLinePick<CR>",
+      "Pick"
+    }
+  },
+  e = {
+    name = "File Explorer",
+    e = {
+      ":NvimTreeFocus<CR>",
+      "Open"
+    },
+    c = {
+      ":NvimTreeClose<CR>",
+      "Close"
+    }
+
+  },
   f = {
     name = "Files",
     f = {

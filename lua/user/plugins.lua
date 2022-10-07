@@ -19,6 +19,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Bototm statusline
   use "goolord/alpha-nvim" -- Greeter
   use "nvim-telescope/telescope.nvim" -- Telescope
+  use "kyazdani42/nvim-tree.lua" -- File explorer
   use "akinsho/bufferline.nvim" -- Bufferline
   use "folke/which-key.nvim" -- Whichkey (keybindings popup)
 
