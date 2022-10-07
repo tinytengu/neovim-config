@@ -27,14 +27,22 @@ It has most of the things one may need. This is a full list of packaged plugins:
   * [Comment.nvim](https://github.com/numToStr/Comment.nvim)
   * [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
 * File explorer
+  * [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 * Gorgeous colorschemes
   * [colorschemes](https://github.com/lunarvim/colorschemes)
 * And some miscelanious things
   * [popup.nvim](https://github.com/nvim-lua/popup.nvim)
   * [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
   * [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+  * [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+  * [alpha-nvim](https://github.com/goolord/alpha-nvim)
+  * [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+  * [which-key.nvim](https://github.com/folke/which-key.nvim)
+  * [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Keybindings
+> Consider using \<leader\>w to call WhichKey plugin
+
 ### No category
 |Mode|Binding|Description|Module|
 |----|-------|-----------|------|

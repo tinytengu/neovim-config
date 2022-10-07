@@ -19,6 +19,8 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Bototm statusline
   use "goolord/alpha-nvim" -- Greeter
   use "nvim-telescope/telescope.nvim" -- Telescope
+  use "akinsho/bufferline.nvim" -- Bufferline
+  use "folke/which-key.nvim" -- Whichkey (keybindings popup)
 
   -- Commenting
   use {
@@ -28,8 +30,6 @@ return packer.startup(function(use)
     end
   } -- Smart comments
   use "JoosepAlviste/nvim-ts-context-commentstring" -- TS React contextual comments // and {/* */}
-  use "akinsho/bufferline.nvim" -- Bufferline
-  use "folke/which-key.nvim" -- Whichkey (keybindings popup)
 
   -- CMP plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
