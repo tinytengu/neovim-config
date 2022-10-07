@@ -1,5 +1,9 @@
 # nvim-config
-This is my carefully crafted, neatly stolen from different places [Neovim](https://neovim.io) config written in Lua.
+This is my carefully crafted, in some places neatly stolen [Neovim](https://neovim.io) config written in Lua.
+
+## Preview (clickable)
+[![Preview](https://i.imgur.com/KGLKyZy.png)](https://i.imgur.com/KGLKyZy.png)
+
 
 My goal was to make it unified as much as possible so everything looks similar, keybindings make sense and so on.
 
